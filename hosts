@@ -1,2 +1,2 @@
-[xenail]
-10.166.0.43 ansible_user=root
+[xenial]
+ubuntu ansible_host=10.166.0.43 ansible_user=root
