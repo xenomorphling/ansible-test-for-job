@@ -1,0 +1,20 @@
+---
+source_file: client.j2
+dest_file: /etc/openvpn/client.conf
+client: client
+dev_mode: 'dev tun'
+proto: 'proto udp'
+remote: 'remote 192.168.0.15 443'
+resolve-retry: 'resolv-retry infinite'
+bind: nobind
+persist: persist-key
+ca: 'ca ca.crt'
+cert: 'cert client.crt'
+key: key client.key
+crypt: 'dh dh2048.pem'
+tls1: tls-client
+tls2: tls-auth ta.key 1
+float: float
+keepalive: 'keepalive 10 120'
+compression: comp-lzo
+log: verb 0
