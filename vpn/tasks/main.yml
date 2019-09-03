@@ -1,0 +1,7 @@
+---
+# tasks file for vpn
+- name: insure open vpn is present on server
+  package: name=openvpn state=latest
+
+- name: generate open vpn config
+  
