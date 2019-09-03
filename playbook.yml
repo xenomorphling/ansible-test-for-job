@@ -1,6 +1,0 @@
-- name: install open vpn and generate config
-  hosts: xenial
-  become: true
-
-  roles:
-    - { role: vpn }
