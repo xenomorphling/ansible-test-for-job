@@ -4,7 +4,7 @@
   package: name=openvpn state=latest
 
 - name: generate open vpn config
-  template: src= {{ source_file }} dest={{ dest_file }} mode=0555
+  template: src=client.j2 dest={{ dest_file }} mode=0555
 
 - name: start open vpn service on boot
   service: name=openvpn state=started enabled=yes
