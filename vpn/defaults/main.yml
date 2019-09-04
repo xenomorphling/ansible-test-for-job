@@ -5,7 +5,7 @@ client: client
 dev_mode: 'dev tun'
 proto: 'proto udp'
 remote: 'remote 192.168.0.15 443'
-resolve-retry: 'resolv-retry infinite'
+resolve_retry: 'resolv-retry infinite'
 bind: nobind
 persist: persist-key
 ca: 'ca ca.crt'
