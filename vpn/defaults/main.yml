@@ -7,13 +7,13 @@ proto: 'proto udp'
 remote: 'remote 192.168.0.15 443'
 resolve_retry: 'resolv-retry infinite'
 bind: nobind
-persist: persist-key
+persist: 'persist-key'
 ca: 'ca ca.crt'
 cert: 'cert client.crt'
-key: key client.key
+key: 'key client.key'
 crypt: 'dh dh2048.pem'
-tls1: tls-client
-tls2: tls-auth ta.key 1
+tls1: 'tls-client'
+tls2: 'tls-auth ta.key 1'
 float: float
 keepalive: 'keepalive 10 120'
 compression: comp-lzo
